@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logofr.png" type="image/png">
+    <title>Visite à Olympus</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.92);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#lightbox-overlay.active {
+  display: flex;
+}
+#lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+.lightbox-arrow, #lightbox-close {
+  position: absolute;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lightbox-arrow.left { left: 40px; }
+.lightbox-arrow.right { right: 40px; }
+#lightbox-close {
+  top: 40px;
+  right: 40px;
+  font-size: 2.2rem;
+  transform: none;
+}
+    </style>
+</head>
+<body>
+      <script>window.addEventListener('DOMContentLoaded', function() {
+  const sidebar = document.getElementById('sidebar');
+  const main = document.querySelector('main');
+  if (sidebar && !sidebar.classList.contains('retracted')) {
+    sidebar.classList.add('retracted');
+  }
+  if (main && !main.classList.contains('retracted')) {
+    main.classList.add('retracted');
+  }
+})
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const images = Array.from(document.querySelectorAll('.gallery-image'));
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+  const lightbox = document.getElementById('lightbox-overlay');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxPrev = document.getElementById('lightbox-prev');
+  const lightboxNext = document.getElementById('lightbox-next');
+  const lightboxClose = document.getElementById('lightbox-close');
+  let currentIndex = 0;
+
+  // Find the currently visible image in the slider
+  function getCurrentIndex() {
+    return images.findIndex(img => img.style.display !== 'none' && img.offsetParent !== null);
+  }
+
+  function openLightbox(idx) {
+    currentIndex = idx;
+    lightboxImg.src = images[currentIndex].src;
+    lightbox.classList.add('active');
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  fullscreenBtn.addEventListener('click', function() {
+    // If you have a slider, get the current visible image
+    let idx = getCurrentIndex();
+    if (idx === -1) idx = 0;
+    openLightbox(idx);
+  });
+
+  lightboxPrev.addEventListener('click', showPrev);
+  lightboxNext.addEventListener('click', showNext);
+  lightboxClose.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'Escape') closeLightbox();
+  });
+});
+</script>
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-btn">🧀</button>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Accueil</a></li> 
+            <li><a href="visite-a-olympus.html">Visite à Olympus</a></li>
+            <li><a href="visite-a-la-ferme.html">Visite à la Ferme</a></li>
+            <li><a href="notre-classe.html">Notre classe</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Visite à Olympus</h1>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+           
+            <div class="gallery-container">
+                <button class="gallery-btn left-btn" id="left-btn">&#10094;</button>
+                <div class="gallery-track">
+                    <img src="olympus-foto-6.jpg" alt="Photo 1" class="gallery-image">
+                    <img src="olympus-foto-1.jpg" alt="Photo 2" class="gallery-image">
+                    <img src="olympus-foto-2.jpg" alt="Photo 3" class="gallery-image">
+                    <img src="olympus-foto-3.jpg" alt="Photo 4" class="gallery-image">
+                    <img src="olympus-foto-4.jpg" alt="Photo 5" class="gallery-image">
+                    <img src="olympus-foto-5.jpg" alt="Photo 6" class="gallery-image">
+                </div>
+                <button class="gallery-btn right-btn" id="right-btn">&#10095;</button>
+            </div>
+            <button class="gallery-btn fullscreen-btn" id="fullscreen-btn">&#x26F6;</button>
+            <div class="gallery-indicators">
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="dot" data-index="6"></span>
+            </div>
+        </section>
+        <section>
+            <h2>Dans les coulisses de la fabrication du fromage chez Olympus</h2>
+            <p>Olympus produit des fromages 
+                et d’autres produits laitiers en Roumanie, dans son usine de lait de Brașov, située dans la localité de Hălchiu, département de Brașov. Cette usine, inaugurée en 2011, est l’une des plus modernes et technologiquement avancées du pays. Elle a une capacité de collecte de plus d’un million de litres de lait par jour et est un leader dans la collecte de lait auprès des agriculteurs roumains.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Colegiul National Andrei Saguna. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- Lightbox overlay -->
+<div id="lightbox-overlay" style="display:none;">
+  <button class="lightbox-arrow left" id="lightbox-prev" aria-label="Précédent">&#10094;</button>
+  <img id="lightbox-img" src="" alt="Photo en grand" />
+  <button class="lightbox-arrow right" id="lightbox-next" aria-label="Suivant">&#10095;</button>
+  <button id="lightbox-close" aria-label="Fermer">&times;</button>
+</div>
+</body>
+</html>

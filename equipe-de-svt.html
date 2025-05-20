@@ -1,0 +1,284 @@
+<link rel="shortcut icon" href="logofr.png" type="image/png">
+<body class="teams-bg">
+<button class="cheese-btn" onclick="window.location.href='index.html'"> Retour à l’accueil</button>
+<link rel="stylesheet" href="style.css">
+<div class="bio-group-container">
+  <div class="team-links">
+    <h2>Découvre l'équipe de SVT</h2>
+<div class="bio-card">
+  <img src="poza bio.jpg" alt="Poza Bio" class="bio-photo-large" id="bioPhoto">
+  <div class="svt-info-title">
+    <div class="svt-info-title">
+  <button class="svt-btn" onclick="window.location.href='informations-svt.html'">
+    Informations sur SVT
+  </button>
+</div>
+  </div>
+  </div>
+  <section class="team-links">
+</div>
+  </h2>
+  <ul class="team-list">
+    <li><a href="https://docs.google.com/document/d/1KUpn7bKzzvxsuzQ2Hb3hAlPRmSmwF91nWwGOxRSf0Ls/edit?tab=t.0">Iulia-Quels sont les risques pour la santé associés aux fromages non pasteurisés et aux fromages à pâte molle?</a></li>
+    <li><a href="https://docs.google.com/document/d/1yCP_wHO4JM48Hq32ITFNm_w5fohRb6V_RM0sOxBf-eM/edit?tab=t.0">Sofia-Comment les micro-organismes (bactéries et moisissures) influencent-ils le processus d’affinage et le goût final du fromage?</a></li>
+    <li><a href="https://docs.google.com/document/d/163Bvg3fZyh7TJ2iD7VZzJ4B9qUROtec9Kk86Kgurt8s/edit?tab=t.0">Alexia-Comment les bactéries lactiques présentes dans le fromage influencent-elles la biodiversité du microbiome intestinal chez les humains ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1tznbsCiG-rI7QpA5yyVyUI2MOm7L63zlMYTQFqvMfao/edit?tab=t.0">Denisa-Dans quelle mesure la consommation de fromage contribue-t-elle à l’équilibre nutritionnel des adultes, et quels sont ses effets sur l’obésité et le diabète? </a></li>
+    <li><a href="https://docs.google.com/document/d/1b5p48wTXdMiCX__uSQuJ1TBt74d89XqZjxO5QZxl1cQ/edit?tab=t.0">Rares-Quel est l'impact du fromage et de ses allergènes sur la santé du tube digestif?</a></li>
+    <li><a href="https://docs.google.com/document/d/1VxpwDy8L8zbDBVghupJo5vVZqOtlxWBzq0CicqGjUU8/edit?tab=t.0">David- Quels sont les effets à long terme de la consommation de fromage riche en graisses saturées sur les risques de maladies cardiovasculaires ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1wuRzL8aEZUwOE_0GHR5FPmVfpeUbRt2xXLz-tm902I8/edit?tab=t.0">Diana- Dans quelle mesure le fromage, en tant qu'aliment riche en matières grasses, peut-il être considéré comme compatible avec la gestion des niveaux de cholestérol dans l'organisme ?
+</a></li>
+  </ul>
+</section>
+<div id="bioModal" class="bio-modal">
+  <span class="bio-close" id="closeBioModal">&times;</span>
+  <img class="bio-modal-content" id="bioModalImg">
+</div>
+ <div id="bioModal" class="bio-modal">
+  <span class="bio-close" id="closeBioModal">&times;</span>
+  <img class="bio-modal-content" id="bioModalImg">
+</div>
+<style>
+  h2 {
+  text-align: center;
+  font-family: 'Segoe UI', 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #059605;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+}
+.team-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -20px;
+}
+
+.team-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 10px;
+  border: 2px solid transparent; 
+  color: #059605;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 24px;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center; 
+  word-break: break-word; 
+}
+
+
+.team-list li {
+  width: 100%;
+  max-width: 700px;
+ 
+  margin: 18px 0;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 0.7s cubic-bezier(.4,0,.2,1) forwards;
+}
+.team-list li:nth-child(1) { animation-delay: 0.05s; }
+.team-list li:nth-child(2) { animation-delay: 0.15s; }
+.team-list li:nth-child(3) { animation-delay: 0.25s; }
+.team-list li:nth-child(4) { animation-delay: 0.35s; }
+.team-list li:nth-child(5) { animation-delay: 0.45s; }
+.team-list li:nth-child(6) { animation-delay: 0.55s; }
+.team-list li:nth-child(7) { animation-delay: 0.65s; }
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.team-list a:hover {
+  background: #c5cae9;
+  color: #000000;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+body.teams-bg {
+  background: #fffbe0;
+  background-image:
+    radial-gradient(circle 32px at 15% 20%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 18px at 70% 40%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 22px at 40% 80%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 14px at 80% 70%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 10px at 60% 25%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 16px at 25% 65%, #ffe066 18%, transparent 19%);
+  background-size: 400px 400px;
+  background-repeat: repeat;
+}
+.bio-group-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 40px 0 40px 0;
+  width: 100%;
+}
+
+
+.bio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.bio-photo-large {
+  width: 700px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 24px; 
+  margin-bottom: 14px;
+  border: 5px solid #ffe066;
+  background: #fffbe0;
+  box-shadow: 0 4px 16px rgba(249,217,35,0.15);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.svt-info-title a {
+  color: #059605;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.svt-info-title a:hover {
+  color: #059605;
+  text-shadow: 0 2px 8px #e0c9a6;
+  text-decoration: underline;
+}
+
+
+.bio-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+}
+.bio-modal-content {
+  display: block;
+  margin: 40px auto;
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(249,217,35,0.22);
+  border: 6px solid #ffe066;
+  background: #fffbe0;
+}
+.bio-close {
+  position: absolute;
+  top: 24px;
+  right: 48px;
+  color: #ffe066;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2100;
+  text-shadow: 0 2px 8px #000;
+}
+.svt-info-title {
+  text-align: center;
+  font-family: 'Segoe UI', 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #059605;
+  margin-top: 18px;
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.cheese-btn {
+  background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
+  color: #b88a00;
+  border: 3px solid #f9d923;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%; 
+  box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 32px 12px 28px;
+  margin: 30px 0 20px 30px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  position: relative;
+  display: inline-block;
+}
+.cheese-btn::before, .cheese-btn::after {
+  content: '';
+  position: absolute;
+  background: #fffbe0;
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.cheese-btn::before {
+  width: 12px;
+  height: 12px;
+  left: 18px;
+  top: 18px;
+}
+.cheese-btn::after {
+  width: 8px;
+  height: 8px;
+  right: 18px;
+  bottom: 12px;
+}
+.cheese-btn:hover {
+  background: linear-gradient(135deg, #ffe066 80%, #fffbe0 100%);
+  box-shadow: 0 4px 16px rgba(249,217,35,0.18), 0 0 0 4px #ffe066 inset;
+  transform: scale(1.08) rotate(-4deg);
+  color: #fffbe0;
+}
+.svt-btn {
+  background-color: #ffe066;
+  color: #059605;
+  border: 2px solid #f9d923;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.svt-btn:hover {
+  background-color: #ffd43b;
+  transform: scale(1.05);
+}
+</style>
+<script>
+document.getElementById('bioPhoto').onclick = function() {
+  document.getElementById('bioModal').style.display = "flex";
+  document.getElementById('bioModalImg').src = this.src;
+};
+document.getElementById('closeBioModal').onclick = function() {
+  document.getElementById('bioModal').style.display = "none";
+};
+window.onclick = function(event) {
+  var modal = document.getElementById('bioModal');
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+</script>

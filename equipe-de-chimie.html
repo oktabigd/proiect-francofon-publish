@@ -1,0 +1,120 @@
+<link rel="shortcut icon" href="logofr.png" type="image/png">
+<body class="teams-bg">
+<button class=" cheese-btn" onclick="window.location.href='index.html'">Retour à l’accueil</button>
+
+<link rel="stylesheet" href="style.css">
+<section class="team-links">
+  <h2>Découvre notre équipe de Chimie</h2>
+  <ul class="team-list">
+    <li><a href="https://docs.google.com/document/d/1Uv-T_CmfGbCSAxVlDgx8LuX3e_nDnbHfeT2sAtfDxnA/edit?tab=t.0">Iosif-Quels sont les processus chimio-bio-physiques qui influencent la production et la maturation du fromage ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1sXtZKkIgaonmjZE2PMrcLrG8t16_pWEnXXnjiHtoloo/edit?tab=t.0">Viviana-Comment les protéines des fromages interagissent avec les moisissures?
+</a></li>
+    <li><a href="https://docs.google.com/document/d/1Rr8rqX45aDwglOPts5LwcjK4SJ8kK4II3YVFJeN80e4/edit?tab=t.0">Victoria-Quel est le rôle des sels de calcium dans la formation de la texture et de la consistance des fromages?</a></li>
+    <li><a href="https://docs.google.com/document/d/1xH07FtkvrPCJVVrXJXQUpIJju5Vr7mTt5T-vr2os2fI/edit?tab=t.0">Briana-Quels mécanismes biochimiques sous-tendent l’intolérance au lactose, et comment peuvent-ils être exploités pour développer des solutions enzymatiques ou alimentaires efficaces permettant une meilleure digestion du lactose?
+</a></li>
+    <li><a href="https://docs.google.com/document/d/1Olpfch2sdMQRtUosYdmvd_dhUgN8OR0nBl-JFOPL1vU/edit?tab=t.0">Oriana-Est-il scientifiquement et technologiquement possible de produire un fromage 100 % synthétique?
+</a></li>
+    <li><a href="https://docs.google.com/document/d/1Yvy_ROf8k5nXbNzlgPtd0NlktHAFrd5IzZeMCBIMN_U/edit?tab=t.0">Sanziana- Quels sont les facteurs chimiques, physiques et biologiques qui influencent le développement de bactéries dans le processus de fermentation du fromage?
+</a></li>
+  </ul>
+</section>
+<style>
+.team-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+.team-list a {
+  display: block;
+  padding: 16px 24px;
+  border-radius: 10px;
+  border: 2px solid transparent; 
+  color: #6812ca;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: left;
+}
+.team-list li {
+  margin: 18px 0;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 0.7s cubic-bezier(.4,0,.2,1) forwards;
+}
+.team-list li:nth-child(1) { animation-delay: 0.05s; }
+.team-list li:nth-child(2) { animation-delay: 0.15s; }
+.team-list li:nth-child(3) { animation-delay: 0.25s; }
+.team-list li:nth-child(4) { animation-delay: 0.35s; }
+.team-list li:nth-child(5) { animation-delay: 0.45s; }
+.team-list li:nth-child(6) { animation-delay: 0.55s; }
+.team-list li:nth-child(7) { animation-delay: 0.65s; }
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.team-list a:hover {
+  background: #c5cae9;
+  color: #6812ca;
+}
+
+body.teams-bg {
+  background: #fffbe0;
+  background-image:
+    radial-gradient(circle 32px at 15% 20%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 18px at 70% 40%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 22px at 40% 80%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 14px at 80% 70%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 10px at 60% 25%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 16px at 25% 65%, #ffe066 18%, transparent 19%);
+  background-size: 400px 400px;
+  background-repeat: repeat;
+}
+.cheese-btn {
+  background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
+  color: #b88a00;
+  border: 3px solid #f9d923;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%; /* formă de cașcaval */
+  box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 32px 12px 28px;
+  margin: 30px 0 20px 30px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  position: relative;
+  display: inline-block;
+}
+.cheese-btn::before, .cheese-btn::after {
+  content: '';
+  position: absolute;
+  background: #fffbe0;
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.cheese-btn::before {
+  width: 12px;
+  height: 12px;
+  left: 18px;
+  top: 18px;
+}
+.cheese-btn::after {
+  width: 8px;
+  height: 8px;
+  right: 18px;
+  bottom: 12px;
+}
+.cheese-btn:hover {
+  background: linear-gradient(135deg, #ffe066 80%, #fffbe0 100%);
+  box-shadow: 0 4px 16px rgba(249,217,35,0.18), 0 0 0 4px #ffe066 inset;
+  transform: scale(1.08) rotate(-4deg);
+  color: #fffbe0;
+}
+</style>
