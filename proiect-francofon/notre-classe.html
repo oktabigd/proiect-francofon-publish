@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logofr.png" type="image/png">
+    <title>Le Monde du Fromage - Notre Classe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Le Monde du Fromage</h1>
+        <h2>Notre Classe</h2>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-btn">🧀</button>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>  
+            <li><a href="visite-a-olympus.html">Visite à Olympus</a></li>
+            <li><a href="visite-a-la-ferme.html">Visite à la Ferme</a></li>
+            <li><a href="notre-classe.html">Notre classe</a></li>
+        </ul>
+    </div>
+      <script>window.addEventListener('DOMContentLoaded', function() {
+  const sidebar = document.getElementById('sidebar');
+  const main = document.querySelector('main');
+  if (sidebar && !sidebar.classList.contains('retracted')) {
+    sidebar.classList.add('retracted');
+  }
+  if (main && !main.classList.contains('retracted')) {
+    main.classList.add('retracted');
+  }
+});</script>
+
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-button active" data-filter="all">Tous</button>
+            <button class="filter-button" data-filter="Chimie">Chimie</button>
+            <button class="filter-button" data-filter="Géographie">Géographie</button>
+            <button class="filter-button" data-filter="Informatique">Informatique</button>
+            <button class="filter-button" data-filter="SVT">SVT</button>
+        </div>
+        <section>  <h3>Ici vous pouvez trouver les carnets de bord de chaque élève de la classe</h3> </section>
+        <div class="students-grid">
+            <!-- 1. Albuleț Amalia -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/carnet-de-bord-albulet-amalia?usp=sharing" target="_blank">
+                        <img src="albulet poza.jpg" alt="Albuleț Amalia">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Albuleț Amalia</div>
+                    <div class="student-team">Informatique</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 2. Apostol Viviana -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/carnetdebordapostolviviana/home?pli=1&authuser=1
+                    " target="_blank">
+                        <img src="viviana poza.jpg" alt="Apostol Viviana">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Apostol Viviana</div>
+                    <div class="student-team">Chimie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 3. Bonciogă Stefania -->
+            <div class="student-card" data-team="Géographie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/view/carnetdebord-deboncioagastefan?pli=1&authuser=1" target="_blank">
+                        <img src="boncioaga poza.jpg" alt="Bonciogă Stefania">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Bonciogă Stefania</div>
+                    <div class="student-team">Géographie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 4. Cantor Iulia -->
+            <div class="student-card" data-team="SVT">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/cantor-iulia" target="_blank">
+                        <img src="cantor poza.jpg" alt="Cantor Iulia">
+                    </a>
+                    <div class="leader-badge">Leader</div>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Cantor Iulia</div>
+                    <div class="student-team">SVT</div>
+         
+                </div>
+            </div>
+            
+            <!-- 5. Căciulă Sebastian -->
+            <div class="student-card" data-team="Géographie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/view/carnetdeborddesebastianflorinc/pagina-de-pornire" target="_blank">
+                        <img src="sebi poza.jpeg" alt="Căciulă Sebastian">
+                    
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Căciulă Sebastian</div>
+                    <div class="student-team">Géographie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 6. Chicomban David -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/chicomban-david" target="_blank">
+                        <img src="kyky poza.jpeg" alt="Chicomban David">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Chicomban David</div>
+                    <div class="student-team">Informatique</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 7. Ciobotaru Sofia -->
+            <div class="student-card" data-team="SVT">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/u/3/d/13rDLWiIb4itHuY0sGXRqOd6kbIRygClq/p/11Q2JGxA9tUeIDGcYEBLWyMA-v_lDJG7Q/preview?authuser=3" target="_blank">
+                        <img src="sofia poza.jpg" alt="Ciobotaru Sofia">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Ciobotaru Sofia</div>
+                    <div class="student-team">SVT</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 8. Creangă Victoria -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/u/1/d/1FL4VJ1KKF42xHT0W_Er_jW8n0jPil95n/preview" target="_blank">
+                        <img src="creanga poza.jpg" alt="Creangă Victoria">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Creangă Victoria</div>
+                    <div class="student-team">Chimie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 9. Filip Daria -->
+            <div class="student-card" data-team="Géographie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/filipdariaioana/fiche-de-synth%C3%A8se-personnelle" target="_blank">
+                        <img src="daria poza.jpeg" alt="Filip Daria">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Filip Daria</div>
+                    <div class="student-team">Géographie</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 10. Florescu Alexia -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/carnetdeborddealexiaflorescu?usp=sharing" target="_blank">
+                        <img src="florescu poza.jpg" alt="Florescu Alexia">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Florescu Alexia</div>
+                    <div class="student-team">Chimie</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 11. Gheorghiaș Denisa -->
+            <div class="student-card" data-team="SVT">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/carnetdeborddenisagheorghias?usp=sharing" target="_blank">
+                        <img src="denisa poza.jpeg" alt="Gheorghiaș Denisa">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Gheorghiaș Denisa</div>
+                    <div class="student-team">SVT</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 12. Ionescu Bianca -->
+            <div class="student-card" data-team="Géographie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/ionescubianca/recherche-personnelle" target="_blank">
+                        <img src="bianca poza.jpeg" alt="Ionescu Bianca">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Ionescu Bianca</div>
+                    <div class="student-team">Géographie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 13. Ionescu Iulia -->
+            <div class="student-card" data-team="Géographie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/view/carnet-de-bord-ionescu-iulia-m/maison?authuser=0" target="_blank">
+                        <img src="ionescu i poza.jpg" alt="Ionescu Iulia">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Ionescu Iulia</div>
+                    <div class="student-team">Géographie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 14. Lauș Briana -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/laus-briana?usp=sharing" target="_blank">
+                        <img src="briana poza.jpg" alt="Lauș Briana">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Lauș Briana</div>
+                    <div class="student-team">Chimie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 15. Lupu Luca -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/carnet/home" target="_blank">
+                        <img src="poza lupu.png" alt="Lupu Luca">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Lupu Luca</div>
+                    <div class="student-team">Informatique</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 16. Mălăncioiu Filip -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/view/malancioiufilip" target="_blank">
+                        <img src="filip poza.jpeg" alt="Mălăncioiu Filip">
+                    </a>
+                    <div class="leader-badge">Leader</div>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Mălăncioiu Filip</div>
+                    <div class="student-team">Informatique</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 17. Mihalache Rareș -->
+            <div class="student-card" data-team="SVT">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/mihalache-rares-journal-de-bor/accueil?authuser=0" target="_blank">
+                        <img src="WhatsApp Image 2025-05-14 at 11.13.18.jpeg" alt="Mihalache Rareș">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Mihalache Rareș</div>
+                    <div class="student-team">SVT</div>
+                  
+                </div>
+            </div>
+            
+            <!-- 18. Pușcașu Iosif -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/carnetdebordiosifraimond/presentasion?authuser=2" target="_blank">
+                        <img src="WhatsApp Image 2025-05-14 at 11.20.05.jpeg" alt="Pușcașu Iosif">
+                    </a>
+                    <div class="leader-badge">Leader</div>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Pușcașu Iosif</div>
+                    <div class="student-team">Chimie</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 19. Suciava Ioana -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/suciava-ioana" target="_blank">
+                        <img src="photos/suciava-ioana.jpg" alt="Suciava Ioana">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Suciava Ioana</div>
+                    <div class="student-team">Informatique</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 20. Șerban Victor -->
+            <div class="student-card" data-team="Géographie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/saguna.ro/serbanvictorraduuu/page-daccueil?authuser=2" target="_blank">
+                        <img src="victor poza.jpeg" alt="Șerban Victor">
+                    </a>
+                    <div class="leader-badge">Leader</div>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Șerban Victor</div>
+                    <div class="student-team">Géographie</div>
+                  
+                </div>
+            </div>
+            
+            <!-- 21. Șonei David -->
+            <div class="student-card" data-team="SVT">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/sonei-david" target="_blank">
+                        <img src="sonei.jpg" alt="Șonei David">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Șonei David</div>
+                    <div class="student-team">SVT</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 22. Tobescu Octavian -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/view/octaviantobescucarnetdebord/home" target="_blank">
+                        <img src="okta poza.jpeg" alt="Tobescu Octavian">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Tobescu Octavian</div>
+                    <div class="student-team">Informatique</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 23. Trincă Oriana -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/trinca-oriana" target="_blank">
+                        <img src="trinca poza.jpg" alt="Trincă Oriana">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Trincă Oriana</div>
+                    <div class="student-team">Chimie</div>
+                   
+                </div>
+            </div>
+            
+            <!-- 24. Ungureanu Diana -->
+            <div class="student-card" data-team="SVT">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/ungureanu-diana" target="_blank">
+                        <img src="WhatsApp Image 2025-05-14 at 17.25.08.jpeg" alt="Ungureanu Diana">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Ungureanu Diana</div>
+                    <div class="student-team">SVT</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 25. Voinescu Patrick -->
+            <div class="student-card" data-team="Informatique">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/voinescu-patrick" target="_blank">
+                        <img src="photos/voinescu-patrick.jpg" alt="Voinescu Patrick">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Voinescu Patrick</div>
+                    <div class="student-team">Informatique</div>
+                    
+                </div>
+            </div>
+            
+            <!-- 26. Vrînceanu Sânziana -->
+            <div class="student-card" data-team="Chimie">
+                <div class="student-photo">
+                    <a href="https://sites.google.com/example/vrinceanu-sanziana" target="_blank">
+                        <img src="sanziana poza.jpg" alt="Vrînceanu Sânziana">
+                    </a>
+                </div>
+                <div class="student-info">
+                    <div class="student-name">Vrînceanu Sânziana</div>
+                    <div class="student-team">Chimie</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <div class="modal" id="studentModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-photo">
+                <img id="modalPhoto" src="/placeholder.svg" alt="">
+            </div>
+            <div class="modal-name" id="modalName"></div>
+            <div class="modal-team" id="modalTeam"></div>
+            <a href="#" class="modal-button" id="modalButton" target="_blank">Visiter le site Google</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Colegiul National Andrei Saguna. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="notre-classe.js"></script>
+</body>
+</html>
