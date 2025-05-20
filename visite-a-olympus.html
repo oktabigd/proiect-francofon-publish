@@ -134,6 +134,126 @@ document.addEventListener('DOMContentLoaded', function () {
         </nav>
     </header>
     <main>
+    <section style="display: flex; align-items: flex-start; gap: 32px;">
+        <div style="flex: 2;">
+            <h2>Dans les coulisses de la fabrication du fromage chez Olympus</h2>
+            <p>
+                Olympus produit des fromages 
+                et d’autres produits laitiers en Roumanie, dans son usine de lait de Brașov, située dans la localité de Hălchiu, département de Brașov. Cette usine, inaugurée en 2011, est l’une des plus modernes et technologiquement avancées du pays. Elle a une capacité de collecte de plus d’un million de litres de lait par jour et est un leader dans la collecte de lait auprès des agriculteurs roumains.
+            </p>
+        </div>
+        <div style="flex: 1; min-width:500px; max-width:500px;">
+            <img 
+                src="olympus.jpg" 
+                alt="Uzina Olympus Hălchiu" 
+                class="olympus-img-hoverable"
+                style="width:100%; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.13); cursor:pointer;"
+            />
+        </div>
+    </section>
+
+    <style>
+    .olympus-img-hoverable {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .olympus-img-hoverable:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    }
+    /* Lightbox pentru poza Olympus */
+    #olympus-lightbox {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    #olympus-lightbox.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    #olympus-lightbox-img {
+      max-width: 90vw;
+      max-height: 80vh;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+    }
+    #olympus-lightbox-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      background: rgba(255,255,255,0.8);
+      border: none;
+      border-radius: 50%;
+      font-size: 2rem;
+      color: #333;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      z-index: 10002;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #olympus-lightbox-close:hover, #olympus-lightbox-close:focus {
+      background: #e0e0e0;
+      outline: none;
+    }
+    </style>
+
+    <div id="olympus-lightbox">
+      <img id="olympus-lightbox-img" src="olympus.jpg" alt="Uzina Olympus Hălchiu" />
+      <button id="olympus-lightbox-close" aria-label="Fermer">&times;</button>
+    </div>
+
+    <script>
+    // Lightbox doar pentru poza Olympus
+    const olympusImg = document.querySelector('.olympus-img-hoverable');
+    const olympusLightbox = document.getElementById('olympus-lightbox');
+    const olympusLightboxImg = document.getElementById('olympus-lightbox-img');
+    const olympusLightboxClose = document.getElementById('olympus-lightbox-close');
+
+    olympusImg.addEventListener('click', () => {
+      olympusLightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+    olympusLightboxClose.addEventListener('click', () => {
+      olympusLightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    olympusLightbox.addEventListener('click', (e) => {
+      if (e.target === olympusLightbox) {
+        olympusLightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!olympusLightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') {
+        olympusLightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    </script>
+
+        <section>
+            <h2>Usine Olympus Hălchiu – Informations générales et produits</h2>
+            <p>
+              Usine Hălchiu opère sous la marque Olympus, qui fait partie du groupe Hellenic Dairies (famille Sarantis), lequel possède huit usines en Grèce, en Roumanie, en Bulgarie et à Chypre.
+. En Roumanie, le groupe commercialise également des produits laitiers sous des marques associées (par exemple « Oly », « Familia Brasoveanu »). Ces dernières années, l'usine n'a cessé d'innover en lançant, en plus des produits classiques, les premiers yaourts grecs et biologiques locaux, du lait biologique, du kéfir, du sana, etc.
+revistaprogresiv.ro
+. Grâce à ces activités et à ces investissements, l'usine Olympus de Halchiu reste un acteur clé de l'industrie laitière roumaine, avec un impact significatif sur l'économie régionale et un engagement en faveur du développement durable.
+            </p>
+            <p>
+                <strong>Sources:</strong> données officielles et articles de presse (ZF, Forbes, Biz Magazine, etc.) sur l'usine Olympus Brasov (Halchiu), ses produits, ses capacités, ses investissements et ses projets récents.
+            </p>
+
+            <!-- SLIDER MUTAT AICI -->
         <section class="gallery">
            
             <div class="gallery-container">
@@ -158,10 +278,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span class="dot" data-index="6"></span>
             </div>
         </section>
-        <section>
-            <h2>Dans les coulisses de la fabrication du fromage chez Olympus</h2>
-            <p>Olympus produit des fromages 
-                et d’autres produits laitiers en Roumanie, dans son usine de lait de Brașov, située dans la localité de Hălchiu, département de Brașov. Cette usine, inaugurée en 2011, est l’une des plus modernes et technologiquement avancées du pays. Elle a une capacité de collecte de plus d’un million de litres de lait par jour et est un leader dans la collecte de lait auprès des agriculteurs roumains.</p>
+        <!-- FINAL SLIDER MUTAT -->
+
+            <h3>Produse fabricate</h3>
+            <p>
+              L'usine Olympus de Hălchiu produit une très large gamme de produits laitiers, en mettant l'accent sur les fromages traditionnels des Balkans et de Grèce. Le portefeuille comprend des fromages : telemea (vache, brebis, chèvre - y compris des versions allégées et en boîte), halloumi avec AOP, feta, fromage cottage, fromage à la crème, fromage à la crème, urad à la crème et variétés affinées (graviera, kasseri, kefalotiri, etc.). Officiellement, Olympus dit « offrir une large gamme de fromages... fabriqués à partir du meilleur lait... transformés avec la technologie la plus avancée ».
+            </p>
+            <p>
+              En outre, l'usine produit des yaourts (naturels et aromatisés à la grecque - par exemple Stragghisto, lancé en 2018, et des variétés biologiques), du lait de consommation (embouteillé dans des bouteilles en PET et en carton TetraPak), de la crème et du beurre. Les autres produits laitiers comprennent le sana, le kéfir et les variantes de lait de chèvre. La gamme de produits ne se limite pas aux produits laitiers : des jus 100 % naturels à base de fruits et de légumes grecs, des tisanes (montagne, thé glacé), ainsi que des boissons végétales (par exemple, du lait d'amande ou de pistache sous la marque Carpos) sont également disponibles sous la marque Olympus.
+            </p>
+            <p>
+            Dans l'ensemble, Usine Hălchiu assure la production locale de la plupart de ses produits emblématiques (telemea en vrac, yaourt grec, fromage frais, etc.), contribuant ainsi de manière significative au portefeuille Olympus en Roumanie.            </p>
         </section>
     </main>
     <footer>

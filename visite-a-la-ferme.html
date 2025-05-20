@@ -39,9 +39,59 @@
             <h2> Dans le secret du fromage artisanal : immersion dans une ferme locale</h2>
             <p>Plongeons au cœur du savoir-faire traditionnel, là où le lait frais devient fromage grâce à des gestes transmis de génération en génération. Entre passion, patience et produits naturels, découvrez comment une simple ferme locale crée des fromages uniques, riches en goût et en histoire.</p>
         </section>
+
+        <!-- Nouvelle section : Ferma Cătean -->
+        <section>
+            <h2>Ferma Cătean – Localisation et description générale</h2>
+            <p>
+                Ferma Cătean est une entreprise familiale située dans le village de Rotbav (département de Brașov). La tradition de la ferme transylvaine gérée par la famille Cătean remonte à plus de 300 ans (aujourd'hui à la sixième génération). La ferme est intégrée : elle gère environ 300 hectares (170 ha de cultures agricoles et 180 ha de pâturages écologiques), produit elle-même 90% des fourrages et élève les animaux nécessaires. Environ 120 vaches laitières et 1 500 moutons vivent à la ferme (auxquels s'ajoutaient aussi des dizaines de chevaux de race). Tout le lait produit est transformé sur place en fromages à forte valeur ajoutée, et la viande provient des propres animaux, évitant ainsi les collectes externes. La ferme a une adresse fixe : « Sat Rotbav, nr. 137, 507067, Brașov » et dispose d'une certification écologique (pâturages permanents certifiés ECOCERT).
+            </p>
+            <div class="branza-catean-imgs">
+                <img src="branzacatean1.jpg" alt="Brânză Cătean 1" class="fullscreenable branza-hover" />
+                <img src="branzacatean2.jpg" alt="Brânză Cătean 2" class="fullscreenable branza-hover" />
+            </div>
+            <p>
+                <strong>Sources :</strong>
+                agriculturaecologica.ro, fundatia-adept.org, green-report.ro
+            </p>
+        </section>
+
+<style>
+.branza-catean-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 32px 0;
+}
+.branza-catean-imgs img {
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.branza-catean-imgs img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+</style>
+
+        <section>
+            <h2>Produits laitiers et traditionnels</h2>
+            <p>
+                Ferma Cătean propose une large gamme de fromages traditionnels fabriqués à partir de lait de vache et de brebis. Les variétés incluent la télémea de vache et de brebis (fraîche et affinée), le caș doux et fumé, le cașcaval affiné (et fumé), la télémea affinée (« vieille »), le fromage de burduf et le fromage affiné dans une écorce de sapin, ainsi que l'urdă douce. Le fromage de burduf de Ferma Cătean s'est imposé à l'international – il a reçu une Étoile d'Or au concours Great Taste Awards (l'équivalent des « Oscars » de la gastronomie) pour sa saveur complexe. D'autres distinctions incluent la médaille de bronze à l'International Taste Award pour la télémea fraîche et le prix spécial du jury pour la télémea affinée.
+            </p>
+            <p>
+                Outre les produits laitiers, la ferme produit également des préparations traditionnelles à base de viande. La viande des animaux (bœuf, porc, mouton) est transformée en charcuteries artisanales locales – par exemple des saucisses de mouton et d'autres spécialités traditionnelles maison. Ces préparations complètent l'offre des agriculteurs, respectant des recettes locales transmises de génération en génération.
+            </p>
+            <p>
+                <strong>Sources :</strong>
+                go-mio.ro, g4media.ro, brasovtourism.app, gonext.ro, centrulculturalreduta.ro
+            </p>
+        </section>
       
 <section id="visite-ferme">
-  <h2>Visite à la ferme</h2>
+  <h2 align="center">Des photos</h2>
   <div class="photo-grid">
     <img src="ferma1.jpg" alt="Ferme 1" class="fullscreenable" />
     <img src="ferma 2.jpg" alt="Ferme 2" class="fullscreenable" />
@@ -51,7 +101,9 @@
   </div>
 </section>
 
-<style>
+
+
+        <style>
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
