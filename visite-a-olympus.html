@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const lightboxClose = document.getElementById('lightbox-close');
   let currentIndex = 0;
 
-  // Find the currently visible image in the slider
+  
   function getCurrentIndex() {
     return images.findIndex(img => img.style.display !== 'none' && img.offsetParent !== null);
   }
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   fullscreenBtn.addEventListener('click', function() {
-    // If you have a slider, get the current visible image
+    
     let idx = getCurrentIndex();
     if (idx === -1) idx = 0;
     openLightbox(idx);
