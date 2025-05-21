@@ -9,9 +9,9 @@
   <img src="poza bio.jpg" alt="Poza Bio" class="bio-photo-large" id="bioPhoto">
   <div class="svt-info-title">
     <div class="svt-info-title">
-  <button class="svt-btn" onclick="window.location.href='informations-svt.html'">
+  <a href="informations-svt.html" class="cheese-btn cheese-btn-produit">
     Informations sur SVT
-  </button>
+  </a>
 </div>
   </div>
   </div>
@@ -25,8 +25,8 @@
     <li><a href="https://docs.google.com/document/d/1tznbsCiG-rI7QpA5yyVyUI2MOm7L63zlMYTQFqvMfao/edit?tab=t.0">Denisa-Dans quelle mesure la consommation de fromage contribue-t-elle à l’équilibre nutritionnel des adultes, et quels sont ses effets sur l’obésité et le diabète? </a></li>
     <li><a href="https://docs.google.com/document/d/1b5p48wTXdMiCX__uSQuJ1TBt74d89XqZjxO5QZxl1cQ/edit?tab=t.0">Rares-Quel est l'impact du fromage et de ses allergènes sur la santé du tube digestif?</a></li>
     <li><a href="https://docs.google.com/document/d/1VxpwDy8L8zbDBVghupJo5vVZqOtlxWBzq0CicqGjUU8/edit?tab=t.0">David- Quels sont les effets à long terme de la consommation de fromage riche en graisses saturées sur les risques de maladies cardiovasculaires ?</a></li>
-    <li><a href="https://docs.google.com/document/d/1wuRzL8aEZUwOE_0GHR5FPmVfpeUbRt2xXLz-tm902I8/edit?tab=t.0">Diana- Dans quelle mesure le fromage, en tant qu'aliment riche en matières grasses, peut-il être considéré comme compatible avec la gestion des niveaux de cholestérol dans l'organisme ?
-</a></li>
+    <li><a href="https://docs.google.com/document/d/1wuRzL8aEZUwOE_0GHR5FPmVfpeUbRt2xXLz-tm902I8/edit?tab=t.0">Diana- Dans quelle mesure le fromage, en tant qu'aliment riche en matières grasses, peut-il être considéré comme compatible avec la gestion des niveaux de cholestérol dans l'organisme ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1xaVXgrFt9PbaYe6AU4VQKkjGChGuLcIT/edit">Fiche synthèse groupe SVT</a></li>
   </ul>
 </section>
 <div id="bioModal" class="bio-modal">
@@ -38,7 +38,7 @@
   <img class="bio-modal-content" id="bioModalImg">
 </div>
 <style>
-   .cheese-btn.cheese-btn-produit {
+  .cheese-btn.cheese-btn-produit {
   display: inline-block;
   margin: 24px auto 0 auto;
   font-size: 1.5rem;
@@ -96,7 +96,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 .team-list a {
@@ -134,6 +134,7 @@
 .team-list li:nth-child(5) { animation-delay: 0.45s; }
 .team-list li:nth-child(6) { animation-delay: 0.55s; }
 .team-list li:nth-child(7) { animation-delay: 0.65s; }
+.team-list li:nth-child(8) { animation-delay: 0.75s; }
 
 @keyframes fadeInLeft {
   to {
@@ -243,7 +244,7 @@ body.teams-bg {
   font-size: 2rem;
   font-weight: 600;
   color: #059605;
-  margin-top: 18px;
+  margin-top: -5px;
   letter-spacing: 1px;
   width: 100%;
   display: block;

@@ -1,36 +1,89 @@
 <link rel="shortcut icon" href="logofr.png" type="image/png">
 <body class="teams-bg">
-<button class=" cheese-btn" onclick="window.location.href='index.html'">Retour à l’accueil</button>
-
-<link rel="stylesheet" href="style.css">
-<section class="team-links">
-  <h2>Découvre notre équipe de Chimie</h2>
-  <ul class="team-list">
-    <li><a href="https://docs.google.com/document/d/1Uv-T_CmfGbCSAxVlDgx8LuX3e_nDnbHfeT2sAtfDxnA/edit?tab=t.0">Iosif-Quels sont les processus chimio-bio-physiques qui influencent la production et la maturation du fromage ?</a></li>
-    <li><a href="https://docs.google.com/document/d/1sXtZKkIgaonmjZE2PMrcLrG8t16_pWEnXXnjiHtoloo/edit?tab=t.0">Viviana-Comment les protéines des fromages interagissent avec les moisissures?
-</a></li>
-    <li><a href="https://docs.google.com/document/d/1Rr8rqX45aDwglOPts5LwcjK4SJ8kK4II3YVFJeN80e4/edit?tab=t.0">Victoria-Quel est le rôle des sels de calcium dans la formation de la texture et de la consistance des fromages?</a></li>
-    <li><a href="https://docs.google.com/document/d/1xH07FtkvrPCJVVrXJXQUpIJju5Vr7mTt5T-vr2os2fI/edit?tab=t.0">Briana-Quels mécanismes biochimiques sous-tendent l’intolérance au lactose, et comment peuvent-ils être exploités pour développer des solutions enzymatiques ou alimentaires efficaces permettant une meilleure digestion du lactose?
-</a></li>
-    <li><a href="https://docs.google.com/document/d/1Olpfch2sdMQRtUosYdmvd_dhUgN8OR0nBl-JFOPL1vU/edit?tab=t.0">Oriana-Est-il scientifiquement et technologiquement possible de produire un fromage 100 % synthétique?
-</a></li>
-    <li><a href="https://docs.google.com/document/d/1Yvy_ROf8k5nXbNzlgPtd0NlktHAFrd5IzZeMCBIMN_U/edit?tab=t.0">Sanziana- Quels sont les facteurs chimiques, physiques et biologiques qui influencent le développement de bactéries dans le processus de fermentation du fromage?
-</a></li>
-  </ul>
+<button class=" cheese-btn" onclick="window.location.href='index.html'"> Retour à l’accueil</button>
+<div class="info-group-container">
+  <div class="info-card">
+    <h2 class="info-title">Découvre notre équipe de chimie</h2>
+    <img src="poza chimie.jpg" alt="Poza Informatique" class="info-photo-large" id="infoPhotoGeo">
+    <div class="info-info-title">
+      <a href="produit-final-chimie.html" target="_blank" class="cheese-btn cheese-btn-produit">
+    Produit final
+      </a>
+    </div>
+  </div>
+   <div class="team-links">
+    <ul class="team-list">
+      <li><a href="https://docs.google.com/document/d/1sXtZKkIgaonmjZE2PMrcLrG8t16_pWEnXXnjiHtoloo/edit?tab=t.0">Viviana-Comment les protéines des fromages interagissent avec les moisissures?</a></li>
+      <li><a href="https://docs.google.com/document/d/1Rr8rqX45aDwglOPts5LwcjK4SJ8kK4II3YVFJeN80e4/edit?tab=t.0">Victoria-Quel est le rôle des sels de calcium dans la formation de la texture et de la consistance des fromages?</a></li>
+      <li><a href="https://docs.google.com/document/d/1xH07FtkvrPCJVVrXJXQUpIJju5Vr7mTt5T-vr2os2fI/edit?tab=t.0">Briana-Quels mécanismes biochimiques sous-tendent l’intolérance au lactose, et comment peuvent-ils être exploités pour développer des solutions enzymatiques ou alimentaires efficaces permettant une meilleure digestion du lactose?</a></li>
+      <li><a href="https://docs.google.com/document/d/1Uv-T_CmfGbCSAxVlDgx8LuX3e_nDnbHfeT2sAtfDxnA/edit?tab=t.0">Iosif-Quels sont les processus chimio-bio-physiques qui influencent la production et la maturation du fromage ?</a></li>
+      <li><a href="https://docs.google.com/document/d/1Olpfch2sdMQRtUosYdmvd_dhUgN8OR0nBl-JFOPL1vU/edit?tab=t.0">Oriana-Est-il scientifiquement et technologiquement possible de produire un fromage 100 % synthétique?</a></li>
+      <li><a href="https://docs.google.com/document/d/1Yvy_ROf8k5nXbNzlgPtd0NlktHAFrd5IzZeMCBIMN_U/edit?tab=t.0">Sanziana- Quels sont les facteurs chimiques, physiques et biologiques qui influencent le développement de bactéries dans le processus de fermentation du fromage?</a></li>
+      <li><a href="https://docs.google.com/document/d/12ZYdQel8xXkBS5v2ebvLxcInvyFVx5TO/edit">Fiche synthèse groupe chimie</a></li>
+    </ul>
+  </div>
+</div>  
+<div id="infoModalGeo" class="info-modal">
+  <span class="info-close" id="closeinfoModalGeo">&times;</span>
+  <img class="info-modal-content" id="infoModalImgGeo">
+</div>
 </section>
 <style>
+  cheese-btn.cheese-btn-produit {
+  display: inline-block;
+  margin: 24px auto 0 auto;
+  font-size: 1.5rem;
+  padding: 16px 40px 16px 36px;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
+  color: #b88a00;
+  border: 3px solid #f9d923;
+  box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
+  font-weight: bold;
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s, color 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+.cheese-btn.cheese-btn-produit::before,
+.cheese-btn.cheese-btn-produit::after {
+  content: '';
+  position: absolute;
+  background: #fffbe0;
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.cheese-btn.cheese-btn-produit::before {
+  width: 18px;
+  height: 18px;
+  left: 22px;
+  top: 18px;
+}
+.cheese-btn.cheese-btn-produit::after {
+  width: 12px;
+  height: 12px;
+  right: 22px;
+  bottom: 16px;
+}
+.cheese-btn.cheese-btn-produit:hover {
+  background: linear-gradient(135deg, #ffe066 80%, #fffbe0 100%);
+  box-shadow: 0 4px 16px rgba(249,217,35,0.18), 0 0 0 4px #ffe066 inset;
+  transform: scale(1.08) rotate(-4deg);
+  color: #fffbe0;
+}
 .team-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 40px;
+  margin-top: 40px;
 }
 .team-list a {
   display: block;
   padding: 16px 24px;
   border-radius: 10px;
   border: 2px solid transparent; 
-  color: #6812ca;
+  color: #8b06c9;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
@@ -38,6 +91,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   text-align: left;
 }
+
 .team-list li {
   margin: 18px 0;
   opacity: 0;
@@ -59,11 +113,24 @@
   }
 }
 
+
 .team-list a:hover {
   background: #c5cae9;
-  color: #6812ca;
+  color: #8b06c9;
 }
 
+body.teams-bg {
+  background: #fffbe0;
+  background-image:
+    radial-gradient(circle 32px at 15% 20%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 18px at 70% 40%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 22px at 40% 80%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 14px at 80% 70%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 10px at 60% 25%, #ffe066 18%, transparent 19%),
+    radial-gradient(circle 16px at 25% 65%, #ffe066 18%, transparent 19%);
+  background-size: 400px 400px;
+  background-repeat: repeat;
+}
 body.teams-bg {
   background: #fffbe0;
   background-image:
@@ -80,7 +147,7 @@ body.teams-bg {
   background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
   color: #b88a00;
   border: 3px solid #f9d923;
-  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%; /* formă de cașcaval */
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
   box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
   font-size: 1.2rem;
   font-weight: bold;
@@ -117,4 +184,149 @@ body.teams-bg {
   transform: scale(1.08) rotate(-4deg);
   color: #fffbe0;
 }
+.info-group-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 40px 0 40px 0;
+  width: 100%;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+.info-photo-large {
+  width: 700px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 14px;
+  border: 5px solid #ffe066;
+  background: #fffbe0;
+  box-shadow: 0 4px 16px rgba(249,217,35,0.15);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.info-title {
+  text-align: center;
+  font-family: 'Segoe UI', 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #8b06c9;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+}
+.info-info-title {
+  text-align: center;
+  width: 100%;
+  margin-top: 18 px;
+}
+
+.info-info-title a {
+  color: #8b06c9;
+  font-size: 2rem;      
+  font-weight: 600;    
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-align: center;
+}
+
+.info-info-title a:hover {
+  color: #8b06c9;
+  text-shadow: 0 2px 8px #e0c9a6;
+  text-decoration: underline;
+}
+
+.team-list {
+  margin-top: 24px;
+}
+.team-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: #8b06c9;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center;
+  word-break: break-word;
+}
+.team-list li {
+  width: 100%;
+  max-width: 700px;
+  margin: 18px 0;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 0.7s cubic-bezier(.4,0,.2,1) forwards;
+}
+.team-list li:nth-child(1) { animation-delay: 0.05s; }
+.team-list li:nth-child(2) { animation-delay: 0.15s; }
+.team-list li:nth-child(3) { animation-delay: 0.25s; }
+.team-list li:nth-child(4) { animation-delay: 0.35s; }
+.team-list li:nth-child(5) { animation-delay: 0.45s; }
+.team-list li:nth-child(6) { animation-delay: 0.55s; }
+.team-list li:nth-child(7) { animation-delay: 0.65s; }
+.info-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+}
+.info-modal-content {
+  display: block;
+  margin: 40px auto;
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(249,217,35,0.22);
+  border: 6px solid #ffe066;
+  background: #fffbe0;
+}
+.info-close {
+  position: absolute;
+  top: 24px;
+  right: 48px;
+  color: #ffe066;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2100;
+  text-shadow: 0 2px 8px #000;
+}
 </style>
+<script>
+document.getElementById('infoPhotoGeo').onclick = function() {
+  document.getElementById('infoModalGeo').style.display = "flex";
+  document.getElementById('infoModalImgGeo').src = this.src;
+};
+document.getElementById('closeinfoModalGeo').onclick = function() {
+  document.getElementById('infoModalGeo').style.display = "none";
+};
+window.onclick = function(event) {
+  var modal = document.getElementById('infoModalGeo');
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+</script>
+</script> 
