@@ -6,9 +6,7 @@
     <h2 class="info-title">Découvre notre équipe d'Informatique</h2>
     <img src="poza info.jpg" alt="Poza Informatique" class="info-photo-large" id="infoPhotoGeo">
     <div class="info-info-title">
-      <a href="" target="_blank">
-        Informations sur l'équipe d'Informatique
-      </a>
+      
     </div>
   </div>
    <div class="team-links">
@@ -20,6 +18,7 @@
        <li><a href="https://docs.google.com/document/d/1ynMcrkr0GRdi_0DKVRpZsTStnrXQsvbpTm3HLokhmYM/edit?tab=t.0">Ioana- Comment réaliser une base de données des fromages?</a></li>
        <li><a href="https://docs.google.com/document/d/1e5Q6aP_46ml166c-f3etVaViKc14xMAPbdFG1M1tPQI/edit?tab=t.0#heading=h.c5qy35xby7it">Octa-Comment l’informatique peut-elle être utilisée pour réduire le gaspillage de fromages?</a></li>
 	   <li><a href="https://docs.google.com/document/d/1SQCAmmd3ePkdxOFym_nnnFlQT2yoAIckfHGu_bRp6Lg/edit?tab=t.0">Patrick-Comment pouvons-nous intégrer le fromage dans les jeux vidéo?</a></li>
+     <li><a href="https://docs.google.com/document/d/1YDUqjQHLdD_ouwQPY1Y5p3tj4eFgS839/edit">Fiche synthèse groupe Informatique</a></li>
     </ul>
   </div>
 </div>  
@@ -29,11 +28,54 @@
 </div>
 </section>
 <style>
+  .cheese-btn.cheese-btn-produit {
+  display: inline-block;
+  margin: 24px auto 0 auto;
+  font-size: 1.5rem;
+  padding: 16px 40px 16px 36px;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
+  color: #017cee;
+  border: 3px solid #f9d923;
+  box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
+  font-weight: bold;
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s, color 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+.cheese-btn.cheese-btn-produit::before,
+.cheese-btn.cheese-btn-produit::after {
+  content: '';
+  position: absolute;
+  background: #fffbe0;
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.cheese-btn.cheese-btn-produit::before {
+  width: 18px;
+  height: 18px;
+  left: 22px;
+  top: 18px;
+}
+.cheese-btn.cheese-btn-produit::after {
+  width: 12px;
+  height: 12px;
+  right: 22px;
+  bottom: 16px;
+}
+.cheese-btn.cheese-btn-produit:hover {
+  background: linear-gradient(135deg, #ffe066 80%, #fffbe0 100%);
+  box-shadow: 0 4px 16px rgba(249,217,35,0.18), 0 0 0 4px #ffe066 inset;
+  transform: scale(1.08) rotate(-4deg);
+  color: #fffbe0;
+}
 .team-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 40px;
+  margin-top: 5px;
 }
 .team-list a {
   display: block;
@@ -182,7 +224,7 @@ body.teams-bg {
 .info-info-title {
   text-align: center;
   width: 100%;
-  margin-top: 18px;
+  margin-top: 0px;
 }
 
 .info-info-title a {

@@ -155,13 +155,12 @@
 <body class="teams-bg">
   <button class="cheese-btn" onclick="window.location.href='equipe-de-chimie.html'">Retour à l’équipe</button>
   <div class="gallery-container">
-    <button class="gallery-btn prev" onclick="prevImage()" aria-label="Précédent">&#8592;</button>
+    <button class="gallery-btn prev" id="prevBtn" aria-label="Précédent">&#8592;</button>
     <img id="galleryImage" class="gallery-image" src="1.png" alt="Galerie Chimie">
-    <button class="gallery-btn next" onclick="nextImage()" aria-label="Suivant">&#8594;</button>
+    <button class="gallery-btn next" id="nextBtn" aria-label="Suivant">&#8594;</button>
     <div id="gallery-caption"></div>
   </div>
   <script>
-    
     const images = [
       {src: "1.png", caption: "couverture de livre"},
       {src: "2.png", caption: "Page 1"},
@@ -194,7 +193,6 @@
       {src: "27.png", caption: "Page 28"},
       {src: "28.png", caption: "Page 29"},
       {src: "29.png", caption: "Page 30"},                  
-      
     ];
     let current = 0;
     const img = document.getElementById('galleryImage');
@@ -209,6 +207,16 @@
     function nextImage() { showImage(current + 1); }
     // Inițializare
     showImage(0);
+
+    // Navigare cu butoanele
+    document.getElementById('prevBtn').onclick = prevImage;
+    document.getElementById('nextBtn').onclick = nextImage;
+
+    // Navigare cu tastele săgeată
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "ArrowRight") nextImage();
+    });
   </script>
 </body>
 </html>

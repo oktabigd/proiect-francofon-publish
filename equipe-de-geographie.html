@@ -7,33 +7,76 @@
     <h2 class="geo-title">Découvre notre équipe de Géographie</h2>
     <img src="poza geogra.jpg" alt="Poza Geographie" class="bio-photo-large" id="bioPhotoGeo">
     <div class="svt-info-title">
-      <a href="https://prezi.com/view/vWT3tpDUvjliQMQZIMen/" target="_blank">
-        Produit final
+       <a href="https://prezi.com/view/vWT3tpDUvjliQMQZIMen/" target="_blank" class="cheese-btn cheese-btn-produit">
+    Produit final
       </a>
     </div>
   </div>
-   <div class="team-links">
-    <ul class="team-list">
-      <li><a href="https://docs.google.com/document/d/1kWklcCb2O3qYuSrIV8BjI2hMXaaj2lJw6qvKjZwiRtk/edit?tab=t.0">Stefania-Comment le relief et les ressources locales influencent-ils le type et le goût spécifiques des fromages traditionnels ?</a></li>
-      <li><a href="https://docs.google.com/document/d/1GZexBTVxBRxQCrPJzaRerQaYOjH3M99tp9S1JHSU62w/edit?tab=t.0">Bianca-Comment les fromages à appellation d’origine protégée contribuent-ils au développement économique local et à la préservation des traditions ?</a></li>
-      <li><a href="https://docs.google.com/document/d/1PM8uuue1D2ePSNNvpRsUzJ0VzL9BIsAvnzrzKN-5Gag/edit?tab=t.0">Sebi-Comment les changements climatiques influencent-ils la production laitière et, par conséquent, l’industrie du fromage ?</a></li>
-      <li><a href="https://docs.google.com/document/d/1kbtxqVpXOU2A-jvey7vrtOIXqr-HymNqV1xXY8ssb6Y/edit?tab=t.0">Bianca-Comment les fabricants traditionnels s'adaptent-ils aux exigences technologiques et réglementaires modernes ?</a></li>
-      <li><a href="https://docs.google.com/document/d/1jlCmdffkBysbxuxP8YQL77lmVcoEkMRVO265xnw4O2I/edit?tab=t.0">Iulia-Comment les fromages locaux atteignent-ils les marchés internationaux et l’impact de la mondialisation sur la production?</a></li>
-      <li><a href="https://docs.google.com/document/d/10U2i-EM1yxdupePDNrAkxvhlTyIq7EAI5lzQvaxFLP8/edit?tab=t.0">Victor- Comment les producteurs de fromage s’adaptent-ils aux normes écologiques imposées par la législation de l’Union Européenne?</a></li>
-    </ul>
-  </div>
-</div>  
+ <div class="team-links">
+  <ul class="team-list">
+    <li><a href="https://docs.google.com/document/d/1kWklcCb2O3qYuSrIV8BjI2hMXaaj2lJw6qvKjZwiRtk/edit?tab=t.0">Stefania-Comment le relief et les ressources locales influencent-ils le type et le goût spécifiques des fromages traditionnels ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1PM8uuue1D2ePSNNvpRsUzJ0VzL9BIsAvnzrzKN-5Gag/edit?tab=t.0">Sebi-Comment les changements climatiques influencent-ils la production laitière et, par conséquent, l’industrie du fromage ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1kbtxqVpXOU2A-jvey7vrtOIXqr-HymNqV1xXY8ssb6Y/edit?tab=t.0">Daria-Comment les fabricants traditionnels s'adaptent-ils aux exigences technologiques et réglementaires modernes ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1GZexBTVxBRxQCrPJzaRerQaYOjH3M99tp9S1JHSU62w/edit?tab=t.0">Bianca-Comment les fromages à appellation d’origine protégée contribuent-ils au développement économique local et à la préservation des traditions ?</a></li>
+    <li><a href="https://docs.google.com/document/d/1jlCmdffkBysbxuxP8YQL77lmVcoEkMRVO265xnw4O2I/edit?tab=t.0">Iulia-Comment les fromages locaux atteignent-ils les marchés internationaux et l’impact de la mondialisation sur la production?</a></li>
+    <li><a href="https://docs.google.com/document/d/10U2i-EM1yxdupePDNrAkxvhlTyIq7EAI5lzQvaxFLP8/edit?tab=t.0">Victor- Comment les producteurs de fromage s’adaptent-ils aux normes écologiques imposées par la législation de l’Union Européenne?</a></li>
+    <li><a href="https://docs.google.com/document/d/1YDUqjQHLdD_ouwQPY1Y5p3tj4eFgS839/edit"> Fiche synthèse groupe Géographie</a></li>
+  </ul>
+</div>
 <div id="bioModalGeo" class="bio-modal">
   <span class="bio-close" id="closeBioModalGeo">&times;</span>
   <img class="bio-modal-content" id="bioModalImgGeo">
 </div>
 
 <style>
+  .cheese-btn.cheese-btn-produit {
+  display: inline-block;
+  margin: 24px auto 0 auto;
+  font-size: 1.5rem;
+  padding: 16px 40px 16px 36px;
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
+  color: #b88a00;
+  border: 3px solid #f9d923;
+  box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
+  font-weight: bold;
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s, color 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+.cheese-btn.cheese-btn-produit::before,
+.cheese-btn.cheese-btn-produit::after {
+  content: '';
+  position: absolute;
+  background: #fffbe0;
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.cheese-btn.cheese-btn-produit::before {
+  width: 18px;
+  height: 18px;
+  left: 22px;
+  top: 18px;
+}
+.cheese-btn.cheese-btn-produit::after {
+  width: 12px;
+  height: 12px;
+  right: 22px;
+  bottom: 16px;
+}
+.cheese-btn.cheese-btn-produit:hover {
+  background: linear-gradient(135deg, #ffe066 80%, #fffbe0 100%);
+  box-shadow: 0 4px 16px rgba(249,217,35,0.18), 0 0 0 4px #ffe066 inset;
+  transform: scale(1.08) rotate(-4deg);
+  color: #fffbe0;}
+  
 .team-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .team-list li {
   margin: 18px 0;
@@ -166,7 +209,7 @@ body.teams-bg {
 .svt-info-title {
   text-align: center;
   width: 100%;
-  margin-top: 18px;
+  margin-top: -18px;
 }
 
 .svt-info-title a {
