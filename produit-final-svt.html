@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Produit final SVT</title>
+  <link rel="shortcut icon" href="logofr.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fffbe0;
+      background-image:
+        radial-gradient(circle 32px at 15% 20%, #ffe066 18%, transparent 19%),
+        radial-gradient(circle 18px at 70% 40%, #ffe066 18%, transparent 19%),
+        radial-gradient(circle 22px at 40% 80%, #ffe066 18%, transparent 19%),
+        radial-gradient(circle 14px at 80% 70%, #ffe066 18%, transparent 19%),
+        radial-gradient(circle 10px at 60% 25%, #ffe066 18%, transparent 19%),
+        radial-gradient(circle 16px at 25% 65%, #ffe066 18%, transparent 19%);
+      background-size: 400px 400px;
+      background-repeat: repeat;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cheese-btn {
+      background: linear-gradient(135deg, #ffe066 60%, #fffbe0 100%);
+      color: #b88a00;
+      border: 3px solid #f9d923;
+      border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+      box-shadow: 2px 2px 8px rgba(249,217,35,0.13), 0 0 0 4px #fffbe0 inset;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 12px 32px;
+      margin: 30px;
+      cursor: pointer;
+      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    }
+
+    .cheese-btn:hover {
+      background: linear-gradient(135deg, #ffe066 80%, #fffbe0 100%);
+      box-shadow: 0 4px 16px rgba(249,217,35,0.18), 0 0 0 4px #ffe066 inset;
+      transform: scale(1.08) rotate(-4deg);
+      color: #fffbe0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 36px;
+      color: #6d4c1b;
+      margin: 40px 0;
+    }
+
+    .section-title {
+      font-size: 26px;
+      text-align: center;
+      color: #6d4c1b;
+      font-weight: bold;
+      margin: 40px 0 20px;
+    }
+
+    .text-block {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #3d2f00;
+      margin-bottom: 40px;
+    }
+   
+.container video {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #ffd43b; 
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(249,217,35,0.18);
+}
+  </style>
+  
+</head>
+<body>
+  <button class="cheese-btn" onclick="window.location.href='equipe-de-svt.html'">Retour à la page précédente</button>
+
+  <section class="container">
+    <h2 class="title">Produit final SVT</h2>
+
+    <h3 class="section-title">Présentation du produit final</h3>
+    <p class="text-block">
+      Dans le cadre de notre projet interdisciplinaire, nous avons décidé, en tant qu’équipe de SVT, de nous concentrer sur la création d’un fromage sans lactose, destiné aux personnes intolérantes. Ce choix a été motivé par notre volonté de lier les connaissances théoriques en SVT à une problématique concrète de santé publique, tout en proposant un produit final qui s’intègre réellement à toutes les disciplines du projet : biologie, chimie, géographie et informatique.
+      <br><br>
+      Nous nous sommes inspirés pour le choix de notre produit final de l’expérience réalisée lors du cours de chimie, où nous avons fabriqué un fromage frais. Cette activité nous a montré concrètement les étapes de transformation du lait en fromage et nous a donné envie de prolonger cette démarche par un produit adapté aux besoins actuels. En effet, le nombre de personnes souffrant d’intolérance au lactose est en augmentation dans le monde entier. Selon une étude de l’Organisation mondiale de la Santé, environ 65 % de la population mondiale présente une certaine forme d’intolérance au lactose, ce qui rend notre projet particulièrement pertinent et utile. Ce constat renforce l’importance de développer des alternatives alimentaires accessibles et saines, comme notre fromage sans lactose, qui répond aux exigences nutritionnelles de ce public croissant.
+      <br><br>
+      Côté pratique, nous avons testé notre recette dans une cuisine professionnelle, en utilisant du lait sans lactose et du calcium lactique auxquels nous avons ajouté des arômes naturels (curcuma, cannelle, muscade, cerneaux de noix, origan, basilic) pour créer différentes variétés. Cette étape nous a permis d’expérimenter directement avec les ingrédients et de constater comment les arômes naturels pouvaient diversifier les goûts tout en gardant un produit sain et adapté aux besoins nutritionnels des personnes intolérantes.
+      <br><br>
+      Chaque membre de l’équipe a joué un rôle essentiel dans la réussite de la fabrication et de la documentation de ce produit final. Les travaux pratiques et scientifiques combinés ont renforcé notre compréhension des propriétés biologiques et chimiques du fromage sans lactose, tout en nous permettant d’adapter la recette en fonction des retours et des résultats expérimentaux.
+    </p>
+  </section>
+
+  <section class="container">
+    <h3 class="section-title">Vidéo du produit final</h3>
+    <div class="container">
+        <video width="640" height="360" controls>
+         <source src="produs final SVT.mp4" type="video/mp4">
+        </video>
+    </div>
+  </section>
+</body>
+</html>
